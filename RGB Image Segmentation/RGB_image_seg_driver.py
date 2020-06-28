@@ -15,7 +15,7 @@ print("We found your file!")
 start_time = time.time()
 
 gaus_blur = func.down_sampled_image(file_path = file_path_input)
-#gaus_blur = func.down_sampled_image(file_path = r'/Users/swapnilmanchanda/Documents/Edinburgh_Data_Science/AFDS/Coursework/shuttle.png')
+
 normalise_cordinates = func.normalise_gaus_blur_cordinates(gaus_blur)
 adjacency_matrix,no_edges,average_deg = func.construct_adjacency_matrix(normalise_cordinates)
 heatmap_matrix = func.construct_heatmap_matrix(adjacency_matrix)
